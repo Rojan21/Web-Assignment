@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    font-family: "Mukta", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    position: relative;
+  }
+
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 4px 4px 4px #a29f9f;
+    border-radius: 0 0 1rem 1rem;
+    align-items: center;
+
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+   
+}
+
+h1 span{
+    display: block;
+}
+
+
+
+ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px; /* Height of the bottom border */
+    background-color: red; /* Color of the bottom border */
+    transition: width 0.3s ease; /* Animation for border width */
+}
+
+/* Show bottom border on hover */
+ul li:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+
+.Hero-section{
+    max-width: 80rem;
+    background-color: red;
+    margin:2rem auto;
+}
